@@ -111,6 +111,7 @@ class _AddDataPageState extends State<AddDataPage> {
                 ),
                 TextFormField(
                   onSaved: (e) => price = e!,
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     hintText: 'Price',
                     filled: true,

@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:crud_database/model/barang_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 
@@ -125,6 +126,7 @@ class _EditDataPageState extends State<EditDataPage> {
                 ),
                 Container(
                   child: TextFormField(
+                    keyboardType: TextInputType.number,
                     // onSaved: (e) => price.text = e!,
                     controller: price,
                     decoration: InputDecoration(
